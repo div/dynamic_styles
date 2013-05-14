@@ -1,5 +1,3 @@
 require "dynamic_styles/version"
-
-module DynamicStyles
-  # Your code goes here...
-end
+require 'dynamic_styles/stylesheet'
+require 'dynamic_styles/asset_compiler'
