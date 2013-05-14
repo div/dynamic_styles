@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = DynamicStyles::VERSION
   spec.authors       = ["Igor Davydov"]
   spec.email         = ["iskiche@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.description   = "Use dynamic stylesheets compatible with asset pipeline"
+  spec.summary       = "Dynamic stylesheets for rails apps"
   spec.homepage      = ""
   spec.license       = "MIT"
 
