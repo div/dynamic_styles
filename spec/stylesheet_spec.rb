@@ -1,4 +1,5 @@
-require 'dynamic_styles'
+require 'dynamic_styles/asset_compiler'
+require 'dynamic_styles/stylesheet'
 
 module DynamicStyles
   describe Stylesheet do

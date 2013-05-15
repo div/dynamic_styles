@@ -63,11 +63,12 @@ module DynamicStyles
     end
 
     def render_template
-      controller = (@layout.class.to_s.pluralize + "Controller").constantize
+      class_name = @layout.class.to_s
+      controller = (class_name.pluralize + "Controller").constantize
       controller.new.render_to_string template_name,
         formats: [:scss],
         layout:  false,
-        locals:  { site: @layout }
+        locals:  { :"#{class_name.downcase}" => @layout }
     end
 
   end
